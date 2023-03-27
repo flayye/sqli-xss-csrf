@@ -24,6 +24,7 @@ echo "Incorrect username or password";
 }
 }
 ```
+https://comp427.rice.edu/proj2/sqlinject2/checklogin.php
 
 ## Part 2 defenses against XSS (Cross Site Scripting)
 ### 2.0 No defenses
