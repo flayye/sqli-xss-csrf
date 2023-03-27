@@ -3,11 +3,11 @@
 ## Part 1 defenses against SQL injection
 ### 1.0 No defenses
 Target: https://comp427.rice.edu/proj2/sqlinject0/
-Submission: sql_0.txt
+
 ### 1.1 Simple escaping
 The server escapes single quotes (') in the inputs by replacing them with two single quotes.
 Target: https://comp427.rice.edu/proj2/sqlinject1/
-Submission: sql_1.txt
+
 ### 1.2 Escaping and Hashing
 The server uses the following PHP code, which escapes the username and applies the MD5
 hash function to the password.
@@ -26,5 +26,35 @@ echo "Incorrect username or password";
 ```
 
 ## Part 2 defenses against XSS (Cross Site Scripting)
+### 2.0 No defenses
+Target: https://comp427.rice.edu/proj2/search?xssdefense=0
+
+### 2.1 Remove “script”
+```
+filtered = re.sub(r"(?i)script", "", input) 
+```
+Target: https://comp427.rice.edu/proj2/search?xssdefense=1
+
+### 2.2 Remove several tags
+```
+filtered = re.sub(r"(?i)script|<img|<body|<style|<meta|<embed|<object",
+"", input)
+```
+Target: https://comp427.rice.edu/proj2/search?xssdefense=2
+
+### 2.3 Remove some punctuation
+```
+filtered = re.sub(r"[;'\"]", "", input)
+```
+Target: https://comp427.rice.edu/proj2/search?xssdefense=3
 
 ## Part 3 defenses against CSRF (Cross Site Request Forgery)
+### 3.0 No defenses
+Target: https://comp427.rice.edu/proj2/login?csrfdefense=0&xssdefense=4
+### 3.1 Token validation
+The server sets a cookie named csrf_token to a random 16-byte value and also includes
+this value as a hidden field in the login form. When the form is submitted, the server verifies
+that the client’s cookie matches the value in the form. You are allowed to exploit the XSS
+vulnerability from Part 2 to accomplish your goal.
+
+Target: https://comp427.rice.edu/proj2/login?csrfdefense=1&xssdefense=0
