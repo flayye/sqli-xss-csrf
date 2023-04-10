@@ -1,4 +1,4 @@
-# Popular Web-Security Penetration
+# Popular Web-Security Exploration Testing
 
 ## Part 1 defenses against SQL injection
 ### 1.0 No defenses
