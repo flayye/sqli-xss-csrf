@@ -63,5 +63,5 @@ Target: https://comp427.rice.edu/proj2/login?csrfdefense=1&xssdefense=0
 ## Disclaimer:
 If you're currently enrolled in Intro to Computer Security at Rice University or plan to take it in the future.
 
-Please do not access my solutions till the conclusion of your term. 
-Let's all strive to uphold academic integrity and follow our university's policies. Thank you for understanding!
+**Please do not access my solutions till the conclusion of your term. 
+Let's all strive to uphold academic integrity and follow our university's policies. Thank you for understanding!**
