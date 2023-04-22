@@ -61,6 +61,6 @@ vulnerability from Part 2 to accomplish your goal.
 Target: https://comp427.rice.edu/proj2/login?csrfdefense=1&xssdefense=0
 
 ## Disclaimer:
-**If you're currently enrolled in Intro to Computer Security at Rice University or plan to take it in the future.**<br>
-**Please do not access my solutions till the conclusion of your term. <br>
-Let's all strive to uphold academic integrity and follow our university's policies. Thank you for understanding!**
+#### **If you're currently enrolled in Intro to Computer Security at Rice University or plan to take it in the future.**<br>
+#### **Please do not access my solutions till the conclusion of your term. <br>
+#### Let's all strive to uphold academic integrity and follow our university's policies. Thank you for understanding!**
